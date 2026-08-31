@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Happy Birthday Hottie</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <div id="modal" class = "modal" style="display:none">
+        <div>
+            <span class="closebutton" onclick="closePopup()">x</span>
+            <img src="images/bdaymessage.png" class="popupImg" id="popupImg">
+        </div>
+    </div>
+
+    <body>
+        <div class = "top">
+            <img src="images/hearts.png", style = "max-width: 300px; max-height: auto;">
+            <div style = "display: flex; align-items: center; flex-direction: column;">
+                <h1 style="font-size: 70px"> Happy 20th Birthday!</h1>
+                <p> to the best boyfriend ever. enjoy this poorly made html website... mwah!</p>
+            </div>
+            <img src="images/hearts.png", style = "max-width: 300px; max-height: auto;">
+        </div>
+
+        <div class = "mid">
+            <div style="display: flex; flex-direction: column;">
+                <h1 style="margin-top: 30px;">Instructions!</h1>
+                <p style="margin-right: 50px; margin-left: 20px; line-height: 1.5;">dear blorg, <br><br> i stole your crossword idea! below are two puzzles you must solve to continue to the 
+                    true birthday message... making an overlapping crossword was very jank as you can see with the questionable spacing (eek!) but i hope you enjoy. 
+                    despite how you dislike birthdays i hope this silly gift makes it a bit better. <br><br> much love from your very lucky and very happy girlfriend <3 </p>
+                <p style="align-self: end;"> a cutie and his birthday meal ----> </p>
+            </div>
+            <img src="images/eekeek.png", style="margin-right: 30px; max-width: 440px; max-height: 440px;">
+        </div>
+
+        <div class = "games">
+            <div class = "gameinsides">
+                <div style = "display: flex; justify-content: space-between;">
+                    <h2>a fun crossword for bored hotties</h2>
+                    <img src = "images/happie.png", style = "max-width: 70px; max-height: 70px; margin-top: 7px;">
+                </div>
+                <div class="pm-embed-div" data-id="6efb3bda" data-set="bcc7d925b1d5cab600c90ec772fddd8353ac3863eef8c4db0c90437fe7a0bd8f" data-puzzletype="crossword" data-height="800px" 
+                data-mobilemargin="10px"></div> 
+            </div>
+
+            <div class = "gameinsides">
+                <div style = "display: flex; justify-content: space-between;">
+                    <h2>wordle with an unknown answer?</h2>
+                    <img src = "images/mwahwink.png", style = "max-width: 70px; max-height: 70px; margin-top: 7px;">
+                </div>
+                <div class="pm-embed-div" data-id="008779e2" data-set="bcc7d925b1d5cab600c90ec772fddd8353ac3863eef8c4db0c90437fe7a0bd8f" 
+                data-puzzletype="wordrow" data-height="800px" data-mobilemargin="10px"></div>
+            </div>
+        </div>
+
+        <div class = "mwah">
+            <p style="margin-bottom: 10px;">ready to access the bday message? enter the secret code!</p>
+            <p style="margin-bottom: 25px;">hint: the answer is you, namely "not" + the number of "a"s in the crossword + the wordle word</p>
+            <div>
+                <label for="sp">secret passcode:</label>
+                <input type="text" id="sp" placeholder="enter passcode here" autocomplete = "off">
+                <button onclick="checkAnswer()">Enter</button>
+            </div>
+        </div>
+
+        <script>PM_Config.PM_BasePath = "https://puzzleme.amuselabs.com/pmm/";</script>
+        <script id="pm-script" src="https://puzzleme.amuselabs.com/pmm/js/puzzleme-embed.js"></script>
+        <script src="script.js" async defer></script>
+
+    </body>
+
+</html>
